@@ -1,0 +1,4 @@
+/gps/particle gamma
+/gps/ene/type Gauss
+/gps/ene/mono 1 MeV
+/gps/ene/sigma 0.02 MeV

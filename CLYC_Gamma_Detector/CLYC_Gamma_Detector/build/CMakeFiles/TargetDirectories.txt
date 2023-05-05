@@ -1,0 +1,4 @@
+/home/harshit/sim/CLYC_Gamma_Detector/build/CMakeFiles/sim.dir
+/home/harshit/sim/CLYC_Gamma_Detector/build/CMakeFiles/gammaDetector.dir
+/home/harshit/sim/CLYC_Gamma_Detector/build/CMakeFiles/edit_cache.dir
+/home/harshit/sim/CLYC_Gamma_Detector/build/CMakeFiles/rebuild_cache.dir

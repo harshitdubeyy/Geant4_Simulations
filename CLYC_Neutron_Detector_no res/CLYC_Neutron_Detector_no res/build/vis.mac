@@ -1,0 +1,32 @@
+/vis/open OGL 600x600-0+0
+
+/vis/viewer/set/autoRefresh false
+#/vis/verbose errors
+
+/vis/drawVolume
+
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+#
+# Specify style (surface, wireframe, auxiliary edges,...)
+		/vis/viewer/set/style wireframe
+		/vis/viewer/set/auxiliaryEdge true
+		/vis/viewer/set/lineSegmentsPerCircle 100
+#
+# Draw smooth trajectories at end of event, showing trajectory points
+# as markers 2 pixels wide:
+		/vis/scene/add/trajectories smooth
+		/vis/modeling/trajectories/create/drawByCharge
+		/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+		/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+# To superimpose all of the events from a given run:
+		/vis/scene/endOfEventAction accumulate
+
+
+/vis/geometry/set/visibility World 0 false
+		/vis/viewer/set/hiddenMarker true
+		/vis/viewer/set/viewpointThetaPhi 120 150
+		/vis/viewer/set/autoRefresh true
+		/vis/verbose warnings
+

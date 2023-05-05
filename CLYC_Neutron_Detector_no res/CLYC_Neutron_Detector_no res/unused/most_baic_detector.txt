@@ -1,0 +1,17 @@
+G4Material *world_mat = nist->FindOrBuildMaterial("G4_AIR");
+  
+  G4Box *solidWorld = new G4Box("SolidWorld",0.5*m,0.5*m,0.5*m);
+  
+  G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld,world_mat,"logicWorld");
+  
+  G4VPhysicalVolume *physWorld = new G4PVPlacement(0,                     //no rotation
+                      G4ThreeVector(0.,0.,0.),       //at (0,0,0)
+                      logicWorld,            //its logical volume
+                      "World",               //its name
+                      0,                     //its mother  volume
+                      false,                 //no boolean operation
+                      0,                     //copy number
+                      true);
+  
+  
+  return physWorld;

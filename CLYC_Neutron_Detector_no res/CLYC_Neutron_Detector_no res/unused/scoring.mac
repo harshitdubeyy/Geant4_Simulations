@@ -1,0 +1,29 @@
+/run/initialize
+#
+# define scoring mesh
+#
+/score/create/probe Probes 50. cm
+#
+#Create a mesh large as the box
+#
+#/score/mesh/boxSize 75. 75. 20. cm
+#
+#Position it over the box
+#
+/score/mesh/translate/xyz 0 0 0 m
+#
+#Number of bins
+/score/mesh/nBin 1 1 1
+#
+/score/quantity/energyDeposit eDep keV
+#
+/score/close
+#Run Beam
+/run/beamOn 1000
+#
+/score/dumpQuantityToFile boxMesh_1 eDep energyDeposite.txt 
+#
+#Fill histogram
+/analysis/h1/create eDep Energy_Deposited 100 0.01 5. MeV ! log
+/score/fill1D 
+

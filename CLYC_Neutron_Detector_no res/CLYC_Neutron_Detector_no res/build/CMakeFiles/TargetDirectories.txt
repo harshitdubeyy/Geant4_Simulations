@@ -1,0 +1,4 @@
+/home/harshit/sim/CLYC_Neutron_Detector_no res/build/CMakeFiles/sim.dir
+/home/harshit/sim/CLYC_Neutron_Detector_no res/build/CMakeFiles/gammaDetector.dir
+/home/harshit/sim/CLYC_Neutron_Detector_no res/build/CMakeFiles/edit_cache.dir
+/home/harshit/sim/CLYC_Neutron_Detector_no res/build/CMakeFiles/rebuild_cache.dir
