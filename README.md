@@ -6,3 +6,8 @@ Geant4: Geant4 is a software toolkit designed and developed by CERN to simulate 
 
 Root: ROOT is an open-source, object-oriented software framework developed by CERN for data processing, analysis, and visualization. We have utilized ROOT to visualize Geant4 data and plot histograms. 
 
+![Gamma_DR](https://github.com/harshitdubeyy/Geant4_Simulations/assets/62109631/dc363ca6-63f4-4cf6-9b4d-b9c62072b425)
+Detector response simulation for gamma rays
+
+![Neutron_DR](https://github.com/harshitdubeyy/Geant4_Simulations/assets/62109631/aeed92e2-a02a-48b1-97f5-0a47f999d410)
+Detector response simulation for fast neutrons
